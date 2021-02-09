@@ -15,4 +15,8 @@ router.get('/profile', requiresAuth(), function (req, res, next) {
   });
 });
 
+router.get('/xd', requiresAuth(), function (req, res, next) {
+  res.render('this is a test');
+});
+
 module.exports = router;
